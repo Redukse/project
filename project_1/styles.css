@@ -1,29 +1,164 @@
-#fileContent {
-    width: 1200px;
-    height: 200px;
-    overflow: auto;
-    margin-left: 20px; /* Відступ зліва */
-    border: 2px solid #000;
-    margin-top: 20px; /* Відступ зверху */
-    padding: 10px;
-  }
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 20;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+    line-height: 2;
+}
+
+.ander_logo {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(21, 170, 21);
+    color: rgb(255, 255, 255);
+    line-height: 3;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 120px;
+}
 
 #fileInput {
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+#clearFormButton {
+    margin-top: 13px;
+    margin-left: 30%;
+}
+
+#fileContent {
+    width: 78%;
+    height: 200px;
+    overflow: auto;
+    margin-left: 100px;
+    border: 2px solid #000;
+    background-color: #ffffff;
     margin-top: 20px;
-    margin-left: 20px;  
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
 }
 
-#letterCount, #charCount, #nonAlphaNumericCount, #digitCount, #punctuationCount, #specialCharCount {
-    margin-left: 20px; /* Відступ зліва */
+.content-container_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 226px;
+    margin-top: 40px;
 }
 
+#letterCount {
+    width: 104px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #000;
+}
+
+#charCount {
+    width: 115px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #000;
+}
+
+#nonAlphaNumericCount {
+    width: 323px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #000;
+}
+
+.content-container_2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 226px;
+    margin-top: 10px
+}
+
+#digitCount {
+    width: 108px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #000;
+}
+
+#punctuationCount {
+    width: 193px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #000;
+}
+
+#specialCharCount {
+    width: 221px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #000;
+}
 
 #letterOccurrences {
-    width: 1200px;
-    height: 100px;
+    width: 79%;
+    height: 50px;
     overflow: auto;
-    margin-left: 20px; /* Відступ зліва */
+    margin-left: 100px; 
     border: 2px solid #000;
-    margin-top: 20px; /* Відступ зверху */
+    background-color: #ffffff;
+    margin-top: 20px;
     padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+    position: relative;
+    text-align: center;
+}
+
+#letterOccurrences::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 70%;
+    border-right: 1px solid #000;
+    height: 100%;
 }

@@ -7,25 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <input type="file" id="fileInput">
-    <button id="clearFormButton">Очистити форму</button>
+    <h1 class="logo">Кількість символів та слів</h1>
+    <h2 class="ander_logo">лічильник знаків, букв, чисел та спеціальних символів</h2>
+    <div class="button-container">
+        <h1 class="button">Додайте текстовий файл для розрахунку:</h1>
+        <input type="file" id="fileInput">
+        <button id="clearFormButton">Очистити форму</button>
+    </div>    
     <div id="fileContent"></div>
-    <p id="letterCount">Кількість букв: <span>0</span></p>
-    <p id="charCount">Кількість знаків: <span>0</span></p>
-    <p id="nonAlphaNumericCount">Кількість не-буквенних та не-цифрових знаків: <span>0</span></p>
-    <p id="digitCount">Кількість цифр: <span>0</span></p>
-    <p id="punctuationCount">Кількість розділових знаків: <span>0</span></p>
-    <p id="specialCharCount">Кількість спеціальних символів: <span>0</span></p>    
+    <div class="content-container_1">
+        <p id="letterCount">Кількість букв: <span>0</span></p>
+        <p id="charCount">Кількість знаків: <span>0</span></p>
+        <p id="nonAlphaNumericCount">Кількість не-буквенних та не-цифрових знаків: <span>0</span></p>
+    </div>
+    <div class="content-container_2">
+        <p id="digitCount">Кількість цифр: <span>0</span></p>
+        <p id="punctuationCount">Кількість розділових знаків: <span>0</span></p>
+        <p id="specialCharCount">Кількість спеціальних символів: <span>0</span></p> 
+    </div>   
     <table id="letterOccurrences">
-    <thead>
-        <tr>
-        <th>Буква</th>
-        <th>Кількість повторень</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
+        <thead>
+            <tr>
+            <th>Буква</th>
+            <th>Кількість повторень</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
     </table>
+
     <script src="scripts.js"></script>
 </body>
 </html>
