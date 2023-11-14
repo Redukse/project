@@ -1,0 +1,29 @@
+#fileContent {
+    width: 1200px;
+    height: 200px;
+    overflow: auto;
+    margin-left: 20px; /* Відступ зліва */
+    border: 2px solid #000;
+    margin-top: 20px; /* Відступ зверху */
+    padding: 10px;
+  }
+
+#fileInput {
+    margin-top: 20px;
+    margin-left: 20px;  
+}
+
+#letterCount, #charCount, #nonAlphaNumericCount, #digitCount, #punctuationCount, #specialCharCount {
+    margin-left: 20px; /* Відступ зліва */
+}
+
+
+#letterOccurrences {
+    width: 1200px;
+    height: 100px;
+    overflow: auto;
+    margin-left: 20px; /* Відступ зліва */
+    border: 2px solid #000;
+    margin-top: 20px; /* Відступ зверху */
+    padding: 10px;
+}
